@@ -1,6 +1,6 @@
 # CHIP-8 Emulator
 
-A cross-platform CHIP-8 emulator implementation written in C++ with command-line interface and optional debug windows.
+A cross-platform CHIP-8 emulator implementation written in C++ with command-line interface and optional debug windows. I opted for the console version since I could not make the SFML code work for some reason.
 
 ## Features
 
