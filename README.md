@@ -103,14 +103,17 @@ When running with the `debug` parameter on Windows, a separate debug console win
 ## Project Structure
 
 ```
-├── main.cpp                 # Main application entry point
+┌── main.cpp                 # Main application entry point
 ├── chip8.h                  # CHIP-8 emulator class header
 ├── chip8.cpp                # CHIP-8 emulator implementation
 ├── PlatformConsole.h        # Cross-platform console interface header
 ├── PlatformConsole.cpp      # Console display and input handling
+├── Platform.h               # Cross-platform grahical SFML interface header (not working)
+├── Platform.cpp             # Grahical display and input handling (not working)
 ├── DebugConsoleManager.h    # Debug console manager header
 ├── DebugConsoleManager.cpp  # Debug console implementation (Windows)
-└── README.md               # This file
+├── chip8-test-rom.ch8       # Demo ROM
+└── README.md                # This file
 ```
 
 ## CHIP-8 Specifications
@@ -165,14 +168,8 @@ The emulator implements all 35 standard CHIP-8 instructions:
 
 ## ROMs
 
-The emulator can run standard CHIP-8 ROM files. Popular games and demos include:
+The emulator can run standard CHIP-8 ROM files. The included demo is [**chip8-test-rom**](https://github.com/corax89/chip8-test-rom), made by corax89. ![image](https://github.com/user-attachments/assets/63117399-00ea-4bcb-92a3-f44734b5ebc4)
 
-- **Pong**
-- **Tetris**
-- **Space Invaders**
-- **Breakout**
-- **Snake**
-- **Maze**
 
 ROMs should be in binary format with the `.ch8` extension.
 
