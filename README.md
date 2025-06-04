@@ -112,7 +112,7 @@ When running with the `debug` parameter on Windows, a separate debug console win
 ├── Platform.cpp             # Grahical display and input handling (not working)
 ├── DebugConsoleManager.h    # Debug console manager header
 ├── DebugConsoleManager.cpp  # Debug console implementation (Windows)
-├── chip8-test-rom.ch8       # Demo ROM
+├── test_opcode.ch8       # Demo ROM
 └── README.md                # This file
 ```
 
@@ -168,7 +168,11 @@ The emulator implements all 35 standard CHIP-8 instructions:
 
 ## ROMs
 
-The emulator can run standard CHIP-8 ROM files. The included demo is [**chip8-test-rom**](https://github.com/corax89/chip8-test-rom), made by corax89. ![image](https://github.com/user-attachments/assets/63117399-00ea-4bcb-92a3-f44734b5ebc4)
+The emulator can run standard CHIP-8 ROM files. The included demo is test_opcode.ch8, sourced from the repo [**chip8-test-rom**](https://github.com/corax89/chip8-test-rom), made by corax89. 
+
+This test ROM executes a series of CHIP-8 instructions and displays the results on the screen. Each test corresponds to a particular opcode or a group of related opcodes. The outcome of each test is shown as "OK" if the opcode is handled correctly or "NO" if there's an issue. This visual feedback helps developers identify which parts of their emulator need debugging. The output of the loaded ROM should be this
+
+![image](https://github.com/user-attachments/assets/63117399-00ea-4bcb-92a3-f44734b5ebc4)
 
 
 ROMs should be in binary format with the `.ch8` extension.
